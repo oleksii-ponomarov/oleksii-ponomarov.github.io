@@ -49,10 +49,6 @@ h1, h2, h3, h4, h5 {
   font-family: "Circular";
 }
 
-p, span {
-  font-family: "Inter";
-}
-
 h1 {
   font-size: 2rem;
 }
@@ -61,8 +57,21 @@ h2 {
   font-size: 1.5rem;
 }
 
-p {
+p, a, span {
+  font-family: "Inter";
+}
+
+p, a {
   font-size: 1.5rem;
+}
+
+a {
+  color: #777777;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 section {
@@ -120,6 +129,9 @@ section {
   border-radius: 5px;
   background-color: #FFFFFF;
   opacity: 0.25;
+}
+
+.hero-credits a, .hero-credits {
   font-size: 0.75rem;
 }
 
@@ -157,6 +169,9 @@ footer {
 
 .footer-links {
   display: flex;
+}
+
+.footer-links i {
   font-size: 2rem;
 }
 
@@ -168,7 +183,7 @@ footer {
 }
 
 .footer-link:hover {
-  color: #FFD6AA;
+  color: #FFD257
 }
 
 @media (min-width: 768px) {
