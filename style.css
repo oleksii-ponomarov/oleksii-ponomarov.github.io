@@ -78,6 +78,10 @@ section {
   flex-grow: 1;
 }
 
+.text-content {
+  margin: 1.5rem 0;
+}
+
 .container {
   padding: 0 1rem;
   max-width: 1140px;
