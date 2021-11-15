@@ -7,30 +7,30 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Regular.ttf") format('truetype');
+  src: url("./fonts/Inter-Regular.ttf") format('truetype');
   font-style: normal;
-  font-weight: 400
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Medium.ttf") format('truetype');
+  src: url("./fonts/Inter-Medium.ttf") format('truetype');
   font-style: normal;
-  font-weight: 500
+  font-weight: 500;
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter-Bold.ttf") format('truetype');
+  src: url("./fonts/Inter-Bold.ttf") format('truetype');
   font-style: normal;
-  font-weight: 700
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "Circular";
   font-weight: 700;
   font-style: normal;
-  src: url("../fonts/circular-bold.woff2") format("woff2"), url("../fonts/circular-bold.woff") format("woff");
+  src: url("./fonts/circular-bold.woff2") format("woff2"), url("../fonts/circular-bold.woff") format("woff");
 }
 
 html {
@@ -43,9 +43,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Inter";
+  font-size: 1.5rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Circular";
 }
 
@@ -54,14 +60,6 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-}
-
-p, a, span {
-  font-family: "Inter";
-}
-
-p, a {
   font-size: 1.5rem;
 }
 
@@ -74,12 +72,32 @@ a:hover {
   text-decoration: underline;
 }
 
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: flex-end;
+  column-gap: 1.5rem;
+  row-gap: 0.75rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
 section {
   flex-grow: 1;
 }
 
 .text-content {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
 }
 
 .container {
@@ -120,7 +138,9 @@ section {
   transform: translateY(-50%);
 }
 
-.page-hero h1, .page-hero h2, .page-hero p {
+.page-hero h1,
+.page-hero h2,
+.page-hero p {
   color: #FFFFFF;
 }
 
@@ -135,7 +155,8 @@ section {
   opacity: 0.25;
 }
 
-.hero-credits a, .hero-credits {
+.hero-credits a,
+.hero-credits {
   font-size: 0.75rem;
 }
 
