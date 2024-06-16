@@ -6,20 +6,23 @@ footer {
 .footer-links {
   display: flex;
 }
-
 .footer-links i {
   font-size: 2rem;
 }
 
-.footer-link,
-.footer-link:visited {
-  color: #ffffff;
+.footer-link {
+  display: flex;
   transition: color 0.25s;
   margin-right: 2rem;
 }
-
+.footer-link, .footer-link:visited {
+  color: #ffffff;
+}
 .footer-link:hover {
   color: #ffd257;
+}
+.footer-link svg {
+  height: 32px;
 }
 
 @font-face {
@@ -95,7 +98,8 @@ dl {
   display: grid;
   grid-template-columns: max-content auto;
   align-items: flex-end;
-  column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   row-gap: 0.75rem;
 }
 
@@ -204,6 +208,4 @@ section {
   background-image: url("./img/me.webp");
   background-size: cover;
   border-radius: 50%;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

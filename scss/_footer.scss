@@ -1,23 +1,30 @@
 footer {
-  background-color: #b8b8b8;
-  padding: 1rem 0;
+    background-color: #b8b8b8;
+    padding: 1rem 0;
 }
 
 .footer-links {
-  display: flex;
+    display: flex;
+
+    i {
+        font-size: 2rem;
+    }
 }
 
-.footer-links i {
-  font-size: 2rem;
-}
+.footer-link {
+    display: flex;
+    transition: color 0.25s;
+    margin-right: 2rem;
+    
+    &, &:visited {
+        color: #ffffff;
+    }
 
-.footer-link,
-.footer-link:visited {
-  color: #ffffff;
-  transition: color 0.25s;
-  margin-right: 2rem;
-}
+    &:hover {
+        color: #ffd257;
+    }
 
-.footer-link:hover {
-  color: #ffd257;
+    svg {
+        height: 32px;
+    }
 }
